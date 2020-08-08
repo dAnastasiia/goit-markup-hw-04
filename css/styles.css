@@ -1,10 +1,54 @@
-/* цвет основного текста #757575 */
-/* дополнительный цвет текста #212121 */
-/* дополнительный цвет текста #000000 */
-/* дополнительный цвет текста #FFFFFF */
-/* акцент кнопки #2196F3 */
-/* дополнительный цвет фона #F5F4FA */
-/* цвет фона футера #2F303A */
+/* <svg class="icon">
+  <use xlink:href="#client-6"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#client-5"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#client-4"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#client-3"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#client-2"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#client-1"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#astronaut"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#graphic"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#vector"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#antenna"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#envelope"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#linkedin"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#facebook"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#twitter"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#instagram"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#phone"></use>
+</svg> */
+
+
+
 
 :root {
 	--primary-text-color: #757575;
@@ -51,6 +95,12 @@ ul {
 	height: 1px !important;
 	width: 1px !important;
 	overflow: hidden;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /* General */
@@ -113,10 +163,37 @@ ul {
 	text-decoration: none;
 }
 
+/* .link.mail:before{
+	content: "";
+	background-image: url(/images/sprite.svg#envelope);
+} */
+
+.contacts-item-icon{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.contacts-item .link:hover .contacts-item-icon{
+	fill: var(--accent-color);
+}
+
 /* Hero */
 
 .hero {
 	text-align: center;
+}
+
+.banner{
+	background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)) , url(/images/hero.jpg);
+	background-repeat: no-repeat;
+	width: 1600px;
+	min-height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 200px;
+	padding-right: 452px;
+	padding-bottom: 215px;
+	padding-left: 452px;
 }
 
 .hero-title {
@@ -124,7 +201,7 @@ ul {
 	margin-bottom: 30px;
 
 	/* temporary bg */
-	background-color: #54b61b;
+	/* background-color: #54b61b; */
 
 	color: var(--tretiary-text-color);
 
@@ -225,6 +302,34 @@ ul {
 
 section.team {
 	background-color: var(--secondary-bg-color);
+}
+
+.team-list .team-member{
+	border-radius: 0px 0px 4px 4px;
+}
+
+.team-list > .item{
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.social-networks-item > a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+}
+
+.social-networks-item > a:hover,
+.social-networks-item > a:focus{
+	background-color: var(--accent-color);
+}
+
+.social-networks-item > a:hover .social-icon,
+.social-networks-item > a:focus .social-icon{
+	fill: var(--primary-bg-color);
 }
 
 /* Clients */
@@ -523,6 +628,7 @@ footer .container.flexbox {
 
 .project-item {
 	width: calc((100% - 2 * 30px) / 3);
+	/* border: 1px solid #EEEEEE; */
 }
 
 .projects-list .project-item:not(:nth-child(3n)) {
@@ -538,6 +644,10 @@ footer .container.flexbox {
 	padding-right: 24px;
 	padding-bottom: 20px;
 	padding-left: 24px;
+
+	
+	border: 1px solid #EEEEEE;
+	border-top: none;
 }
 
 .project-card .title,

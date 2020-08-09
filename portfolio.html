@@ -27,9 +27,9 @@
 					</a>
 
 					<ul class="site-nav flexbox">
-						<li class="site-nav-item"><a href="./index.html" class="link">Студия</a></li>
+						<li class="site-nav-item"><a href="./index.html" class="link current">Студия</a></li>
 						<li class="site-nav-item">
-							<a href="./portfolio.html" class="link current" target="_blank" rel="noopener">Портфолио</a>
+							<a href="./portfolio.html" class="link" target="_blank" rel="noopener">Портфолио</a>
 						</li>
 						<li class="site-nav-item"><a href="" class="link" target="_blank" rel="noopener">Контакты</a></li>
 					</ul>
@@ -37,13 +37,19 @@
 
 				<ul class="contacts flexbox">
 					<li class="contacts-item">
-						<a href="mailto:info@devstudio.com" class="link">
+						<a href="mailto:info@devstudio.com" class="link mail">
+							<svg class="contacts-item-icon" width="16" height="12">
+								<use href="./sprite.svg#icon-envelope"></use>
+							</svg>
 							info@devstudio.com
 						</a>
 					</li>
 
 					<li class="contacts-item">
-						<a href="tel:+380961111111" class="link">
+						<a href="tel:+380961111111" class="link phone">
+							<svg class="contacts-item-icon" width="10" height="16">
+								<use href="./sprite.svg#icon-phone"></use>
+							</svg>
 							+380961111111
 						</a>
 					</li>
@@ -217,14 +223,12 @@
 				<div class="footer-nav">
 					<a href="" class="logo">
 						<span class="logo-specific">Web</span>
-						Studio
+						<span class="logo-specific white">Studio</span>
 					</a>
 
 					<address class="address">
-						г. Киев, пр-т Леси Украинки, 26
-						<br />
-						<span>info@example.com</span>
-						<br />
+						г. Киев, пр-т Леси Украинки, 26<br />
+						<span>info@example.com</span> <br />
 						<span>+38 099 111 11 11</span>
 					</address>
 				</div>
@@ -234,31 +238,46 @@
 
 					<div class="networks">
 						<ul class="social-networks flexbox">
-							<!-- Temporarily styles -->
 							<li class="social-networks-item">
-								<a href="" aria-label="Ссылка на Instagram">Instagram</a>
+								<a href="" aria-label="Ссылка на Instagram" class="social-networks-link">
+									<svg class="social-icon"  width="20" height="20">
+										<use href="./sprite.svg#icon-instagram"></use>
+									</svg>
+								</a>
 							</li>
 
 							<li class="social-networks-item">
-								<a href="" aria-label="Ссылка на Twitter">Twitter</a>
+								<a href="" aria-label="Ссылка на Twitter" class="social-networks-link">
+									<svg class="social-icon"  width="20" height="20">
+										<use href="./sprite.svg#icon-twitter"></use>
+									</svg>
+								</a>
 							</li>
 
 							<li class="social-networks-item">
-								<a href="" aria-label="Ссылка на Facebook">Facebook</a>
+								<a href="" aria-label="Ссылка на Facebook" class="social-networks-link">
+									<svg class="social-icon"  width="20" height="20">
+										<use href="./sprite.svg#icon-facebook"></use>
+									</svg>
+								</a>
 							</li>
 
 							<li class="social-networks-item">
-								<a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a>
+								<a href="" aria-label="Ссылка на LinkedIn" class="social-networks-link">
+									<svg class="social-icon"  width="20" height="20">
+										<use href="./sprite.svg#icon-linkedin"></use>
+									</svg>
+								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="mailing">
+				<!-- <div class="mailing">
 					<b>Подпишитесь на рассылку</b>
 
-					<!-- <a href="" class="button">Подписаться</a> -->
-				</div>
+					<a href="" class="button">Подписаться</a>
+				</div> -->
 			</div>
 		</footer>
 	</body>
